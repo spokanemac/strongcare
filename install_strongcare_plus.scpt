@@ -44,9 +44,9 @@ on InstallStrongCare()
 	set cmd to cmd & " /usr/sbin/installer -target / -pkg /tmp/StrongCare.pkg &&"
 	set cmd to cmd & "/usr/local/munki/managedsoftwareupdate;"
 	
-	my DisplayInfoMsg(cmd)
+	-- my DisplayInfoMsg(cmd)
 	
-	-- do shell script cmd with administrator privileges
+	do shell script cmd with administrator privileges
 	
 end InstallStrongCare
 
